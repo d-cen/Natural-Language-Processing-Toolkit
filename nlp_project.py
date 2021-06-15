@@ -503,9 +503,3 @@ def sentiment_mod(text):
     feats = find_features_tokenize(word_features, text)
     
     return voted_classifier.classify(feats), voted_classifier.confidence(feats)
-
-# Pickle sentiment analysis first, then pass the text
-#sentiment_analysis()    
-#print(sentiment_mod("This movie is terrible. The plot is so bad and the character dipictions are silly."))
-#print(sentiment_mod("This movie is so interesting. Full of context and vivid details."))
-    
