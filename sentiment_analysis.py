@@ -222,8 +222,9 @@ def sentiment_mod(text):
     
     return voted_classifier.classify(feats), voted_classifier.confidence(feats)
 
-# Pickle sentiment analysis first, then pass the text
-#sentiment_analysis()    
-#print(sentiment_mod("This movie is terrible. The plot is bad and the character dipiction are silly."))
-#print(sentiment_mod("This movie isso interesting. Full of context and vivid details."))
+if __name__ == "__main__":
+    # Pickle sentiment analysis first, then pass the text
+    sentiment_analysis()    
+    print(sentiment_mod("This movie is terrible. The plot is bad and the character dipiction are silly."))
+    print(sentiment_mod("This movie isso interesting. Full of context and vivid details."))
     
