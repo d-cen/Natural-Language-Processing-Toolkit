@@ -2,15 +2,7 @@ import nltk
 import random
 import pickle
 
-from nltk.tokenize import sent_tokenize, word_tokenize, PunktSentenceTokenizer
-from nltk.stem import PorterStemmer
-from nltk.stem import WordNetLemmatizer
-
-from nltk.corpus import stopwords, state_union
-from nltk.corpus import gutenberg
-from nltk.corpus import wordnet
-from nltk.corpus import movie_reviews
-
+from nltk.tokenize import word_tokenize
 from statistics import mode
 from nltk.classify import ClassifierI
 from nltk.classify.scikitlearn import SklearnClassifier
