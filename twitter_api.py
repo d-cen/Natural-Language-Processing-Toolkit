@@ -4,11 +4,11 @@ from tweepy.streaming import StreamListener
 import json
 import nlp_project as s
 
-#consumer key, consumer secret, access token, access secret.
-ckey="E2GXtuZR95SERVs7YO2vcysv0"
-csecret="SEw7fTVdoZvSQL5S7HUQfycHxuhJOdpVBnRduF46VmtrbWbPjR"
-atoken="1404598283641798658-x3XmUUmMCYLNfv6acMzc2OSl9ctyhO"
-asecret="yQoaMpTkyjH54QKh2DFpgQbSb93h8FxjfrvzpxZLhXxfh"
+# Consumer key, consumer secret, access token, access secret
+ckey    = "x"
+csecret = "x"
+atoken  = "x"
+asecret = "x"
 
 class listener(StreamListener):
 
@@ -28,4 +28,4 @@ auth = OAuthHandler(ckey, csecret)
 auth.set_access_token(atoken, asecret)
 
 twitterStream = Stream(auth, listener())
-twitterStream.filter(track=["Trae Young"])
+twitterStream.filter(track=["x"])
